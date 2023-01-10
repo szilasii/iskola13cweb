@@ -1,6 +1,6 @@
 const persons = [
     { name:'Tom Swayer', birthdate: 1876, death: 1945 },
-    { name:'Bart Simpson', birthdate: 1989 },
+    { name:'Bart Simpson', birthdate: 1989, death: 2017 },
     { name:'Doctor Strange', birthdate: 1930, death: 2020 },
     { name:'Peter Griffin', birthdate: 1999, death: 2017 },
     { name:'Ragnar Lothbrok', birthdate: 760, death: 800 },
@@ -52,6 +52,7 @@ const teljesBejaras  = () => {
 
 const feladat_1 = () => {
         console.log(persons[Math.floor(Math.random()*persons.length)].name)
-
 }
 feladat_1()
+
+
