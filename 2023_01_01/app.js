@@ -32,7 +32,7 @@ products.forEach(product => {
     productSection.innerHTML += `<div>
         <h2>${product.name}</h2>
         <p>${product.description}</p>
-        <image src="./image/${product.picture}">
+        <image src="./img/${product.picture}">
         <h3>${product.price}</h3>
         <a id=${product.id} class="addToCart">Kosárba</a>
         </div>`;
