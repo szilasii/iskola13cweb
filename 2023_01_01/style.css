@@ -67,10 +67,16 @@ nav a {
     height: 100%;
     background: #7caa0a;
     color: #fff;
-    padding-top: 3.8rem;
-    transform: translatey(-140vh);
+    min-width: 60%;
+    padding: 3.8rem 1rem;
+    transform: translateY(-140vh);
     transition: transform 350ms ease-in-out;
 
+}
+
+#cart-items li:last-child {
+    font-weight: bold;
+    font-size: 150%;
 }
 
 #cart-content.active {
@@ -82,4 +88,46 @@ nav a {
 
 main h1 {
     margin: 0 1rem;
+}
+
+#products{
+    text-align: center;
+}
+
+#products h2 {
+    background: #d8315b;
+    color: #fff;
+    padding: .3rem 1rem;
+    border-bottom: .3rem solid #fff;
+}
+#products p {
+    font-variant: small-caps;
+    font-size: 1.5rem;
+}
+
+
+
+#products img {
+    width: 75%;
+}
+
+#products a {
+    background: #197278;
+    padding: .3rem 1rem;
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    margin-bottom: 1rem;
+    cursor: pointer;
+}
+
+@media (min-width:640px) {
+    #products{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    #products div{
+        margin: 0 .5rem;
+        width: 30%;    
+    }
 }

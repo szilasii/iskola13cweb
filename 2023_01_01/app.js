@@ -15,7 +15,7 @@ nav.addEventListener('mouseleave',(event)=>{
 })
 
 const products = [
-    {id:1,name:'malna', picture:'malna.jpg',
+    {id:1,name:'Málna', picture:'malna.jpg',
         description:'Kézzel szedett finimság',
         price:3800,instock:true},
     {id:2,name:'Áfonya', picture:'afonya.jpg',
@@ -37,3 +37,14 @@ products.forEach(product => {
         <a id=${product.id} class="addToCart">Kosárba</a>
         </div>`;
 })
+
+const cart = {}
+
+const cartIcon = document.getElementById('cart-icon')
+const cartContent = document.getElementById('cart-content')
+const cartItems = document.getElementById('cart-items')
+
+cartIcon.addEventListener('click', (event) => {
+    cartContent.classList.toggle('active')
+})
+
