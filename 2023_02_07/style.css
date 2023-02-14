@@ -1,0 +1,17 @@
+#canvas {
+    display: block;
+    border: solid 3px #adadad;
+    margin-top: 50px;
+}
+
+#div1 {
+    height:100px;
+    width:150px;
+    border: solid 2px #000;
+}
+
+#drag1 {
+    height:100px;
+    width:150px;
+    border: solid 2px #000;
+}

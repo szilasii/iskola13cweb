@@ -65,8 +65,6 @@ products.forEach(product => {
             addToChartButton.addEventListener('click', addToCart);
         }
 });
-
-
 }).catch(error=>console.log(error));
 
 
@@ -103,4 +101,5 @@ cartItems.addEventListener('click',(event) => {
     addToCart(event);
     refreshCartItems();
 });
+
 
