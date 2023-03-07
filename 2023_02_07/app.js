@@ -56,7 +56,7 @@ function drag(event) {
 }
 
 function allowDrop(event) { 
-    event.preventDefault()
+    event.preventDefault();
 }
 
 function drop(event) {
