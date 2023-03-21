@@ -27,7 +27,7 @@ function reset() {
 
     snake = {
         moveElapsed:0,
-        lenght:4,
+        length:4,
         parts: [{
             x:0,
             y:0
@@ -77,7 +77,7 @@ function update(delta) {
         };
         snake.parts.unshift(newSnakePart);
     
-        if (snake.parts.length < snake.length) {
+        if (snake.parts.length > snake.length) {
           snake.parts.pop();
         }
     
